@@ -1,0 +1,89 @@
+<DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="Utf-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>To do list task</title>
+           <style>
+            body{
+                background-color: pink;
+            }
+            .container{
+                border:1px solid red;
+                width: 500px;
+               min-height: 200px;
+                margin: 50px auto;
+                background-color: whitesmoke;
+                border-radius: 5px;
+                outline: none;
+                border: 1px solid gray;
+
+
+            }
+            input [type='text']{
+                height: 30px;
+                padding:0px  10px;
+                border-radius: 7px;
+            }
+            input [type='text']{
+                width: 85%;
+            }
+            ul{
+                list-style: none;
+            }
+            ul li {
+                background-color: antiquewhite;
+                margin: 14px 0;
+                padding: 10px;
+                border-radius: 5px;
+
+    
+            }
+            ul li input[type='button']{
+                float: right;
+            }
+           
+           </style>
+        </head>
+        <body>
+            <div id="task_box">
+                <div class="container">
+                    <input id="newtask" type="text"placeholder="New Task">
+                    <input type="button "value="ADD" onclick="addtask()">
+                    <div id="my_task">
+                     <ul>
+                        <li><input type="checkbox">Task 1<input type="button" value="Delete"></li>
+                        <li><input type="checkbox">Task 1<input type="button" value="Delete"></li>
+                        <li><input type="checkbox">Task 1<input type="button" value="Delete"></li>
+                        <li><input type="checkbox">Task 1<input type="button" value="Delete"></li>
+                        <li><input type="checkbox">Task 1<input type="button" value="Delete"></li>
+                    </ul> 
+                    
+                    <!-- <div class="header">
+                        <h1><span id="count">0</span>Task</h1>
+                        </div>  
+                        <div class="list">
+                            <ul id="box"></ul>
+                </div>
+                <div class="add-task">
+                    <input type="text" id="tboxName">
+                    <button onclick="">
+                        <i class="fas fa-plus"></i>
+                    </button> -->
+
+            </div>
+        </div>
+    
+        
+        </body>
+        <script>
+            function addtask(){
+              let newtask =  document.getElementById("newtask").value
+                console.log(newtask)
+                
+                alltask.push(newtask)
+            }
+        </script>
+       </DOCTYPLE>
+    </html>
